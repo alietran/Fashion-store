@@ -1,0 +1,56 @@
+<div class="main-details-products p-80">
+  <div class="container">
+    <div class="row">
+      <div class="left col-sm-12 col-lg-6 col-xl-6">
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <img src="{{dataPro.image}}" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="right col-sm-12 col-lg-6 col-xl-5">
+        <h2 class="heading">
+           {{dataPro.title}}
+        </h2>
+        <div class="rate">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          (1 customer review)
+        </div>
+        <p class="price">
+          {{dataPro.price}}
+        </p>
+        <p class="description-products">
+          {{dataPro.description}}
+        </p>
+
+        <div class="action d-flex a-center" data-id=${item.id}>
+          <div class="cotrol-item d-flex a-center">
+            <a class="dash-1" href=""><i class="bi bi-dash"></i></a>
+            <input type="text" class="InputAmountProduct" value="1">
+            <a class="plus-1" href=""><i class="bi bi-plus"></i></a>
+          </div>
+          <button class="btn a-center d-flex addcartitem" (click)="addToCartList()">
+      Add to Cart
+          </button>
+        </div>
+        <div class="sku">
+          <span>SKU :</span> FUW237-1<br>
+          <span>Categories :</span> Accessories, Fashion, Mens<br>
+          <span>Tag :</span> teapot<br>
+        </div>
+      </div>
+    </div>
+    <div class="description p-80">
+      <div class="heading-des">
+        <h3> Description</h3>
+      </div>
+      <div class="content">
+        {{dataPro.description}}
+      </div>
+    </div>
+  </div>
+</div>

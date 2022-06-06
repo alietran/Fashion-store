@@ -1,0 +1,65 @@
+/* FOOTER @Author: Ho Thi Minh Tuyen, tuyenb1906358@student.ctu.edu.vn  */
+
+.footer {
+  padding: 50px 0 10px;
+  width: 100%;
+  background: #1a1a1a;
+  font-size: 13px;
+  color: darkslateblue;
+  overflow-x: hidden;
+}
+.footer .row .col img {
+  margin-left: 50px;
+}
+.footer section {
+  margin-left: 40px;
+  font-size: 20px;
+}
+.footer section a {
+  margin: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.footer section a i:hover {
+  transform: scale(1.7);
+}
+.footer section a i {
+  transform: scale(1);
+  transition: all 0.5s;
+}
+.footer .row .col p {
+  margin-left: 30px;
+}
+.footer .row .col h4 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+.footer .row .col ul {
+  padding: 0px;
+}
+.footer .row .col ul li {
+  color: lightsteelblue;
+}
+.footer .row .col a img {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.footer .row .col .col-end {
+  margin-bottom: 20px;
+}
+.up-arrow {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: rgba(240, 232, 232, 0.5);
+  border: 1px solid rgb(179, 170, 170);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  border-radius: 50%;
+  bottom: 40px;
+  right: 20px;
+}

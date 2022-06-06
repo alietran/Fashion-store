@@ -1,0 +1,14 @@
+
+{
+  "products":[
+    { "id": 1, "title": "json-server", "price": "20","category":"category","description":"description","image":"https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg" },
+     { "id": 2, "title": "json-server124", "price": "20","category":"category","description":"description","image":"https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg" },
+     { "id": 3, "title": "json-server325346", "price": "20","category":"category","description":"description","image":"https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg" },
+     { "id": 4, "title": "json-server", "price": "20","category":"category","description":"description","image":"https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg" },
+     { "id": 5, "title": "json-server", "price": "20","category":"category","description":"description","image":"https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg" },
+     { "id": 6, "title": "json-server", "price": "20","category":"category","description":"description","image":"https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg" },
+     { "id": 7, "title": "json-server", "price": "20","category":"category","description":"description","image":"https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg" },
+     { "id": 8, "title": "json-server", "price": "20","category":"category","description":"description","image":"https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg" }
+
+  ]
+}

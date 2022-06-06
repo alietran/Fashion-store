@@ -1,0 +1,47 @@
+<header class="header">
+  <div class="main-header">
+    <div class="top-nav">
+      <div class="menu-ipad-mobile">
+        <i class="bi bi-list"></i>
+      </div>
+      <img class="top-nav__img" src="../../../assets/logo/logo_x2.png">
+      <ul class="top-nav__first">
+        <li><a [routerLink]="['']">Home</a></li>
+        <li class="top-nav__first__Shop"><a href="products.html">Shop <i
+              class="icon-arrow fa fa-angle-down"></i></a>
+          <ul class="menu-Shop">
+            <li><a href="wishlist.html">Danh sách yêu thích</a></li>
+            <li><a href="checkout.html">Thủ tục thanh toán</a></li>
+          </ul>
+        </li>
+        <li class="top-nav__first__Page">
+          <a href="#">Page <i class="icon-arrow fa fa-angle-down"></i></a>
+          <ul class="menu-Page">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="wishlist.html">Wish List</a></li>
+            <li><a href="login.html">My account</a></li>
+          </ul>
+        </li>
+        <li>
+          <a [routerLink]="['cart']">Cart</a>
+        </li>
+        <li><a [routerLink]="['']">Checkout</a></li>
+      </ul>
+      <div class="top-nav__second">
+        <div class="top-nav__second--login-regis">
+          <a href="./login.html"><i class="far fa-user"></i> Đăng nhập</a>/<a class="top-nav__second--regis"
+            href="./register.html">Đăng ký</a>
+        </div>
+        <ul class="top-nav__second__icon">
+          <li class="item addWishlist"><a href="wishlist.html"><i class="fa-solid fa-heart"></i></a><span class="before"
+              id="before1">0</span>
+          </li>
+          <li class="item card-item"> <a data-bs-toggle="modal" data-bs-target="#cardModal"><i
+                class="fa-solid fa-cart-shopping"></i></a><span class="before" id="before">0</span></li>
+          <li><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
