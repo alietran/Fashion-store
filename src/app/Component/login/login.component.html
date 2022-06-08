@@ -1,0 +1,23 @@
+<div class="login">
+  <form class="login-form" (ngSubmit)="onLoginForm()" [formGroup]="loginForm">
+    <h4>Đăng nhập</h4>
+    <div class="input-box form-group" >
+      <p>Tên Đăng Nhập</p>
+      <input formControlName="username" type="text" placeholder="Nhập tên đăng nhập">
+    </div>
+
+    <div class="input-box form-group" >
+      <p>Mật Khẩu</p>
+      <input formControlName="password" type="password" placeholder="Nhập mật khẩu">
+    </div>
+
+    <div>
+      <button class="btn-first">Đăng Nhập</button>
+    </div>
+
+    <div class="btn-second">
+      <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
+    </div>
+
+  </form>
+</div>

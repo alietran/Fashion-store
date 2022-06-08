@@ -6,7 +6,7 @@ export class Cart{
     let totalPrice = 0;
     this.itemCartList.forEach(item =>{
       //kh ép kiểu dc
-      totalPrice += +item.product.price;
+      // totalPrice += +item.product.price;
       // + phía trước để ép kiểu string về number
 
     })

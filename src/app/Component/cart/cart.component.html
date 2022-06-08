@@ -29,7 +29,7 @@
               <div class="img">
                 <!-- [src] : "cartItem.product" -->
                 <!-- src:"{{cartItem.product}}"" -->
-                <img [src]="cartItem.product.image" alt="{{cartItem.image}}" style="width:150px; height: 150px">
+                <img [src]="cartItem.image" alt="{{cartItem.image}}" style="width:150px; height: 150px">
               </div>
             </td>
             <td>
@@ -39,7 +39,7 @@
               </a>
             </td>
             <td>
-            $ {{cartItem.product.price}}
+            $ {{cartItem.price}}
             </td>
             <td>
               <div class="control d-flex a-center">
@@ -53,7 +53,7 @@
 "> - </span></a>
               </div>
             </td>
-            <td> {{(cartItem.product.price * cartItem.quanty) | currency}}</td>
+            <td> {{(cartItem.price * cartItem.quanty) | currency}}</td>
             <!-- <td> {{(cartItem.getTotalPrice())}}</td> -->
           </tr>
         </tbody>

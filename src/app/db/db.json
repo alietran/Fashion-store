@@ -1,0 +1,130 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "price": "20",
+      "category": "category",
+      "description": "description",
+      "image": "https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg"
+    },
+    {
+      "id": 2,
+      "title": "json-server124",
+      "price": "20",
+      "category": "category",
+      "description": "description",
+      "image": "https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg"
+    },
+    {
+      "id": 3,
+      "title": "json-server325346",
+      "price": "20",
+      "category": "category",
+      "description": "description",
+      "image": "https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg"
+    },
+    {
+      "id": 4,
+      "title": "json-server",
+      "price": "20",
+      "category": "category",
+      "description": "description",
+      "image": "https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg"
+    },
+    {
+      "id": 5,
+      "title": "json-server",
+      "price": "20",
+      "category": "category",
+      "description": "description",
+      "image": "https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg"
+    },
+    {
+      "id": 6,
+      "title": "json-server",
+      "price": "20",
+      "category": "category",
+      "description": "description",
+      "image": "https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg"
+    },
+    {
+      "id": 7,
+      "title": "json-server",
+      "price": "20",
+      "category": "category",
+      "description": "description",
+      "image": "https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg"
+    },
+    {
+      "id": 8,
+      "title": "json-server",
+      "price": "20",
+      "category": "category",
+      "description": "description",
+      "image": "https://xachtayonline-vn.s3.ap-southeast-1.amazonaws.com/product_images/1562654958lpu3k-ao-thun-nam-uniqlo-lionking-422125.jpg"
+    }
+  ],
+  "accounts": [
+    {
+      "id": 1,
+      "username": "user",
+      "password": "123456",
+      "phone": 1243435,
+      "email": "123@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "user11",
+      "password": "123456",
+      "phone": 1243435,
+      "email": "123@gmail.com"
+    },
+    {
+      "username": "abc",
+      "password": "123456",
+      "phone": "09465",
+      "email": "ngocdiep710@gmail.com",
+      "id": 3
+    },
+    {
+      "username": "b1809220",
+      "password": "02112000",
+      "address": "Kiên Giang",
+      "phone": "0946",
+      "email": "an.ngocdiep710@gmail.com",
+      "id": 4
+    },
+    {
+      "username": "B1809220",
+      "password": "123",
+      "address": "",
+      "phone": "",
+      "email": "",
+      "id": 5
+    },
+    {
+      "username": "b1809220",
+      "password": "",
+      "address": "",
+      "phone": "",
+      "email": "",
+      "id": 6
+    },
+    {
+      "username": "dfgd",
+      "password": "dfgd",
+      "address": "df",
+      "phone": "",
+      "email": "",
+      "id": 7
+    },
+    {
+      "username": "sdgs",
+      "password": "sfaf",
+      "phone": "09465",
+      "email": "ngocdiep710@gmail.com",
+      "id": 8
+    }
+  ]
+}

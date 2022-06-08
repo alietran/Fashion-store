@@ -21,9 +21,9 @@ export class ProductItemComponent implements OnInit {
 
   ngOnInit(): void {
      this.id = this.route.snapshot.params['id'];
-    this.api.listProductById(this.id).subscribe((res)=>{
-        this.dataPro = res;
-    })
+    // this.api.listProductById(this.id).subscribe((res)=>{
+    //     this.dataPro = res;
+    // })
   }
 
   productDetail(id: number){
@@ -31,6 +31,9 @@ export class ProductItemComponent implements OnInit {
   }
 
   addToCart(){
+      this.api.listProductById(this.id).subscribe((res)=>{
+        this.dataPro = res;
+    })
     this.cartService.addToCart(this.dataPro);
     this.router.navigate(['cart']);
   }

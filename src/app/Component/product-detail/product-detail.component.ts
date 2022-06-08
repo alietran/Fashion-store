@@ -18,8 +18,8 @@ export class ProductDetailComponent implements OnInit {
     private router: Router,
     private cartService: CartService) {
       this.id = this.route.snapshot.params['id'];
+
     this.api.listProductById(this.id).subscribe((res)=>{
-      // console.log(res);
         this.dataPro = res;
     })
   }
@@ -28,6 +28,7 @@ export class ProductDetailComponent implements OnInit {
 
   }
 addToCartList(){
+  //  console.log("this.dataPro", this.product);
   // nêu lấy this.product sẽ kh hiểu dc các thuộc tính product vì đã gán sp theo id vào dataPro
   //Tim hiểu dataPro: any khác vs product ntn mà product kh sd dc
   this.cartService.addToCart(this.dataPro);

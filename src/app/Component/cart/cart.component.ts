@@ -14,11 +14,11 @@ export class CartComponent implements OnInit {
 
   constructor(private cartService: CartService ) {
     this.setCart();
-    console.log("carrt",this.cartService)
+    // console.log("carrt",this.cartService)
 
    }
   ngOnInit(): void {
-
+  // console.log("cart-cartlist",this.cart);
 
   }
 
@@ -35,6 +35,7 @@ export class CartComponent implements OnInit {
   this.cart = this.cartService.getCart();
   // this.cart = cartList;
   console.log("this.cart",this.cart)
+  // localStorage.setItem('cartList', JSON.stringify(this.cart));
   // let cartListItem = this.cart.itemCartList;
 
   // localStorage.setItem('cartListItem', JSON.stringify(cartListItem));

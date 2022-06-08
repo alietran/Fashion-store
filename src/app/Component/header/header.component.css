@@ -212,7 +212,7 @@ header .main-header.active {
 }
 
 .top-nav__second {
-  display: flex;
+  /* display: flex; */
 }
 
 .top-nav__second .top-nav__second--regis {
