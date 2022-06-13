@@ -27,23 +27,42 @@
         </li>
         <li><a [routerLink]="['']">Checkout</a></li>
       </ul>
-      <div class="top-nav__second--login-regis"  *ngIf="!isLogin;else login">
-        <a [routerLink]="['login']"><i class="far fa-user"></i> Login</a>/<a class="top-nav__second--regis"
-          [routerLink]="['signup']">Sign Up</a>
+      <div>
+        <div class="search">
+          <input class="top-nav__search" type="text" class="form-control" name="name" [(ngModel)]="name"
+            (ngModelChange)="search()" placeholder="Search...">
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
       </div>
-<!-- *ngIf="!user; else login"  -->
+
+
+
+      <!-- *ngIf="!user; else login"  -->
       <div class="top-nav__second">
         <ul class="top-nav__second__icon">
+
           <li class="item addWishlist"><a href="wishlist.html"><i class="fa-solid fa-heart"></i></a><span class="before"
               id="before1">0</span>
           </li>
           <li class="item card-item"> <a data-bs-toggle="modal" data-bs-target="#cardModal"><i
                 class="fa-solid fa-cart-shopping"></i></a><span class="before" id="before">0</span></li>
-          <li><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+          <li>
+            <div class="top-nav__second--login-regis" *ngIf="!user;else login">
+              <!-- <app-login></app-login> -->
+              <a [routerLink]="['login']"><i class="far fa-user"></i> Login</a>/<a class="top-nav__second--regis"
+                [routerLink]="['signup']">Sign Up</a>
+            </div>
+          </li>
         </ul>
       </div>
-      <ng-template #login class="top-nav__second--login-regis" >
-       <a>{{user.username}}</a>
+      <ng-template #login class="top-nav__second--login-regis">
+
+        <a>{{user.displayName}}</a>
+        <a (click)="handleLogout()">Đăng xuất</a>
+
+
 
       </ng-template>
     </div>

@@ -19,9 +19,9 @@
           </tr>
         </thead>
         <tbody id="addToCard" >
-          <tr class="product-item-cart" *ngFor="let cartItem of cart.itemCartList">
+          <tr class="product-item-cart" *ngFor="let cartItem of cartList">
             <td>
-              <button class="erase" (click)="removeItemFromCart(cartItem)">
+              <button class="erase" (click)="removeItemFromCart(cartItem.id)">
                 &times;
               </button>
             </td>
@@ -39,7 +39,7 @@
               </a>
             </td>
             <td>
-            $ {{cartItem.price}}
+             {{cartItem.price | currency}}
             </td>
             <td>
               <div class="control d-flex a-center">
@@ -79,12 +79,12 @@
 
         <div class="sub-totals d-flex a-center j-between">
           <span>Subtotal</span>
-          <span class="subtotal">{{(cart.getTotalPrice() | currency)}}</span>
+          <span class="subtotal">{{(getTotalPrice() | currency)}}</span>
         </div>
 
         <div class="total d-flex a-center j-between">
           <span> Total </span>
-          <span class="total-product">{{(cart.getTotalPrice() | currency)}}</span>
+          <span class="total-product">{{(getTotalPrice() | currency)}}</span>
         </div>
 
         <div class="checkout">

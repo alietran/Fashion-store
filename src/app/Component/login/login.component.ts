@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Account } from 'src/app/Models/Account.model';
+import { AuthService } from 'src/app/Service/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,34 +12,41 @@ import { Account } from 'src/app/Models/Account.model';
 })
 export class LoginComponent implements OnInit {
  loginForm = new FormGroup({
-      username: new FormControl(''),
+      email: new FormControl(''),
       password: new FormControl(''),
 
     });
-  constructor(private http: HttpClient,private router: Router) { }
 
-  ngOnInit(): void {
+  isSignedIn = false
+  constructor(private http: HttpClient,private router: Router, private authService:AuthService) { }
+  ngOnInit(){
+    if(localStorage.getItem('user')!== null){
+        this.isSignedIn= true
+    //  location.reload()
+    }
+
+    else
+    this.isSignedIn = false
   }
-   onLoginForm(){
-    console.log("login",this.loginForm.value.username)
-     this.http.get<Account[]>("http://localhost:3000/accounts").subscribe(res=>{
-      const userLogin = res.find((user)=>{
-        // console.log("username",this.loginForm.value.username);
-        // console.log("pass",this.loginForm.value.password);
-          return  user.username === this.loginForm.value.username && user.password === this.loginForm.value.password
-        })
-        console.log("userLogin",userLogin)
-        if(userLogin){
+  // async onSignin(email:string,password:string){
+  //   await this.authService.signin(email,password)
+  //     console.log("email",email)
+  //     console.log("password",password)
+  //   if(this.authService.isLoggedIn)
+  //   this.isSignedIn = true
+  // this.router.navigate(['/home']);
+  // }
+  async login(){
+    await this.authService.signin(this.loginForm.value.email,this.loginForm.value.password)
+      console.log("email",this.loginForm.value.email)
+      console.log("password",this.loginForm.value.password)
+    if(this.authService.isLoggedIn)
+    this.isSignedIn = true
+  this.router.navigate(['/home']);
+  }
 
-        localStorage.setItem('user', JSON.stringify(userLogin));
-        this.loginForm.reset();
-        this.router.navigate(['/home']);
-        alert ("Login successfully")
-        setTimeout(()=>{
-          window.location.reload();
-        },300)
-        }
-    });
+  handleLogout(){
+    this.isSignedIn = false
 
   }
 

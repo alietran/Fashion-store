@@ -18,7 +18,7 @@ export class CartService {
     let cartItem = this.cartList.itemCartList.find(item=>item.id === product.id);
     if(cartItem){
       this.changeQuantity(product.id, cartItem.quanty + 1);
-      //  localStorage.setItem('cartItem', JSON.stringify(cartItem));
+       localStorage.setItem('cartItem', JSON.stringify(cartItem));
       return;
     }
     this.cartList.itemCartList.push(new CartItem(product));

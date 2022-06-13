@@ -1,8 +1,13 @@
 <!-- PRODUCT -->
 <div class="product">
   <div class="container">
-
+    <nav class="search">
+      <input type="text" class="form-control" name="name" [(ngModel)]="name" (ngModelChange)="search()" placeholder="enter any product you want to find">
+    </nav>
+    {{message}} 
+    {{keyword}}
     <div class="product__item card__wrap  ">
+
       <app-product-item *ngFor="let product of productList" [item]="product"></app-product-item>
 
     </div>

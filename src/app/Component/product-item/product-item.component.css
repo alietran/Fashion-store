@@ -49,8 +49,9 @@
 }
 
  .card__item img {
-  width: 235px;
-  height: 307px;
+   width: 100%;
+  /* width: 235px; */
+  /* height: 307px; */
 }
 
  .card__item .product__img {

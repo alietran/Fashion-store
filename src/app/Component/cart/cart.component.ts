@@ -10,21 +10,29 @@ import { CartService } from 'src/app/Service/cart.service';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  cart!:Cart;
-
+  cart!:Cart; 
+  cartList : any[] = [];
   constructor(private cartService: CartService ) {
-    this.setCart();
+  
     // console.log("carrt",this.cartService)
 
    }
   ngOnInit(): void {
   // console.log("cart-cartlist",this.cart);
-
+ this.cartList = JSON.parse(localStorage.getItem('cart') || '[]');
   }
 
-  removeItemFromCart(cartItem : CartItem ){
-    this.cartService.removeItem(cartItem.product.id);
-    this.setCart();
+ 
+  removeItemFromCart(id : number ){
+    console.log("id",id);
+   let removeItem = JSON.parse(localStorage.getItem('cart') || '[]');
+  this.cartList = removeItem.filter((item:any)=>{
+    console.log("item.id",  item.id)
+    console.log("id", id)
+
+   return item.id !== id})
+     localStorage.setItem('cart', JSON.stringify(  this.cartList));
+
   }
 
 
@@ -41,5 +49,14 @@ export class CartComponent implements OnInit {
   // localStorage.setItem('cartListItem', JSON.stringify(cartListItem));
 
  }
+  getTotalPrice() : number {
+    let totalPrice = 0;
+    this.cartList.forEach(item =>{
+      //kh ép kiểu dc
+      totalPrice += +item.price * item.quanty;
+      // + phía trước để ép kiểu string về number
 
+    })
+    return  totalPrice;
+    }
 }
